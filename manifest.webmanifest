@@ -1,0 +1,13 @@
+{
+  "name": "Pflege Deutsch Trainer",
+  "short_name": "Pflege Deutsch",
+  "description": "医療・介護の現場で使うドイツ語学習アプリ",
+  "lang": "ja",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4f6f8",
+  "theme_color": "#17324d",
+  "icons": [
+    {"src":"./icons/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}
