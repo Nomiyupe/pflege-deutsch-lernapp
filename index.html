@@ -88,9 +88,20 @@
     </section>
 
     <section id="words" class="screen">
-      <div class="section-head"><button class="back" data-screen="home">‹</button><div><h2>単語帳</h2><p>検索・カテゴリー・お気に入り</p></div></div>
+      <div class="section-head"><button class="back" data-screen="home">‹</button><div><h2>単語帳</h2><p>検索・カテゴリー・編集・削除</p></div></div>
       <div class="searchrow"><input id="wordSearch" placeholder="日本語・ドイツ語で検索"><select id="wordCategory"></select></div>
       <div id="wordList" class="word-list"></div>
+      <div id="editPanel" class="edit-panel hidden">
+        <div class="edit-head"><h3>単語を編集</h3><button id="cancelEdit" class="iconbtn" type="button">✕</button></div>
+        <form id="editForm" class="formbox compact">
+          <input id="editId" type="hidden">
+          <label>日本語<input id="editJP" required></label>
+          <label>ドイツ語<input id="editDE" required></label>
+          <label>カテゴリー<select id="editCategory"></select></label>
+          <label>メモ<textarea id="editNote" rows="3"></textarea></label>
+          <div class="actions"><button class="secondary" id="cancelEdit2" type="button">キャンセル</button><button class="primary" type="submit">変更を保存</button></div>
+        </form>
+      </div>
     </section>
 
     <section id="manage" class="screen">
